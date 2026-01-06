@@ -1,0 +1,92 @@
+.schedule-container {
+    overflow-x: auto;
+    padding: var(--spacing-md);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: var(--spacing-md);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #e2e8f0;
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.schedule-table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+/* Cell Status Classes */
+.cell-S {
+    background-color: var(--color-subida);
+    color: white;
+}
+
+.cell-I {
+    background-color: var(--color-induccion);
+    color: white;
+}
+
+.cell-P {
+    background-color: var(--color-perforacion);
+    color: white;
+}
+
+.cell-B {
+    background-color: var(--color-bajada);
+    color: white;
+}
+
+.cell-D {
+    background-color: var(--color-descanso);
+    color: white;
+}
+
+.cell-empty {
+    background-color: transparent;
+}
+
+/* Validation Styles */
+.col-error {
+    border: 2px solid var(--color-error);
+}
+
+.count-row td {
+    font-weight: bold;
+}
+
+.count-error {
+    color: var(--color-error);
+    background-color: #fef2f2;
+}
+
+/* Legend */
+.legend {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.legend-color {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 4px;
+}

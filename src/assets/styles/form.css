@@ -1,0 +1,72 @@
+.config-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.form-input {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    width: 100%;
+    min-width: 120px;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    transition: all 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.btn-primary {
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: var(--shadow-md);
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lg);
+}
+
+.error-summary {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: #fef2f2;
+    border: 1px solid #fee2e2;
+    border-radius: var(--radius-md);
+    color: #991b1b;
+}
+
+.error-item {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
